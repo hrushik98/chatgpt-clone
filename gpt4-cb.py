@@ -1,6 +1,9 @@
 import openai
 import streamlit as st
 
+
+
+
 st.title("GPT-4-HRUSHIK")
 
 openai.api_key = st.secrets["OPENAI_API_KEY"]
@@ -15,6 +18,16 @@ for message in st.session_state.messages:
     with st.chat_message(message["role"]):
         st.markdown(message["content"])
 
+st.download_button(
+        "Download chat",
+        "\n".join(
+            [
+                f"{m['role']}: {m['content']}"
+                for m in st.session_state.messages
+            ]
+        ),
+        "chat.txt",
+    )
 if prompt := st.chat_input("What is up?"):
     st.session_state.messages.append({"role": "user", "content": prompt})
     with st.chat_message("user"):
@@ -35,3 +48,5 @@ if prompt := st.chat_input("What is up?"):
             message_placeholder.markdown(full_response + "▌")
         message_placeholder.markdown(full_response)
     st.session_state.messages.append({"role": "assistant", "content": full_response})
+    
+    
