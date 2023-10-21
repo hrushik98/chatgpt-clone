@@ -4,7 +4,7 @@ import streamlit as st
 
 
 
-st.title("GPT-4-HRUSHIK")
+st.title("ChatGPT clone")
 
 openai.api_key = st.secrets["OPENAI_API_KEY"]
 
