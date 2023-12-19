@@ -5,15 +5,17 @@
    ```python
    git clone https://github.com/hrushik98/chatgpt-clone.git
    ```
-1. Install Streamlit
+1. cd into the folder
+```python
+cd chatgpt-clone
+```
+
+2. Install the requirements
    ```python
-   pip install streamlit
+   pip install -r requirements.txt
    ```
-2. cd into the folder
-   ```python
-   cd chatgpt-clone
-   ```
-4. run the app
+
+3. run the app
    ```python
    streamlit run app.py
    ```
