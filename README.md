@@ -9,8 +9,11 @@
    ```python
    pip install streamlit
    ```
-2. >cd into the directory where you have cloned this repo
-3. run the app
+2. cd into the folder
+   ```python
+   cd chatgpt-clone
+   ```
+4. run the app
    ```python
    streamlit run app.py
    ```
