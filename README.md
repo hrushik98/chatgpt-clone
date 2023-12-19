@@ -1,4 +1,5 @@
 # ChatGPT clone
+A clone of ChatGPT UI to access the models via API
 
 # Getting Started
 0. Clone this repository
